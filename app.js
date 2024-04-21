@@ -44,7 +44,8 @@ const posted = sequelize.define("posted", {
 
 const task = sequelize.define("task" , {
     task_id : {
-        type : DataTypes.STRING,
+        type : DataTypes.NUMBER,
+        serialize : true,
         unique : true,
         primaryKey : true
     }
